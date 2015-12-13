@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+require 'tilt'
+require '../example/cv'
+
+template = Tilt.new("../example/template.html.erb")
+
+html = template.render(@profile)
+
+File.open("../example/cv.html", 'w') do |file|
+  file.write(html)
+end

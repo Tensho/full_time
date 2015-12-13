@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Andrew Babichev CV</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="simple-grid.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="row">
+        <div class="col-4">
+          <h2><%= name %></h2>
+        </div>
+        <div class="col-8">
+          <div>Email: <%= email %></div>
+          <div>Homepage: <a href="<%= homepage %>"><%= homepage %></a></div>
+          <div>GitHub: <a href="<%= github %>"><%= github %></a></div>
+          <div>LinkedIn: <a href="<%= linkedin %>"><%= linkedin %></a></div>
+          <div>Twitter: <a href="<%= twitter %>"><%= twitter %></a></div>
+          <div>GoodReads: <a href="<%= goodreads %>"><%= goodreads %></a></div>
+          <div>Location: <%= location %></div>
+          <div><%= extra %></div>
+        </div>
+      </header>
+
+      <section class="row">
+        <div class="col-12">
+          <h2>Skills</h2>
+          <ul>
+            <% skills.each do |skill| %>
+              <li><%= skill %></li>
+            <% end %>
+          </ul>
+        </div>
+        <div class="col-12">
+          <h2>Employment</h2>
+          <% employment.companies.each do |company| %>
+            <!-- companies should be presented as a list (<ul>) -->
+            <h3><%= company.name %></h3>
+            <div><a href="<%= company.homepage %>"><%= company.homepage %></a></div>
+
+            <% company.projects.each do |project| %>
+              <!-- projects should be presented as a list (<ul>) -->
+              <h4><%= project.name %> ( <%= project.start_date %> – <%= project.end_date %> )</h4>
+              <div><a href="<%= project.homepage %>"><%= project.homepage %></a></div>
+              <p><%= project.description %></p>
+              <div><%= project.title %></div>
+
+              <h5>Technologies</h5>
+              <ul>
+              <% project.technologies.each do |technology| %>
+                <li><%= technology %></li>
+              <% end %>
+              </ul>
+
+              <h4>Achievements</h4>
+              <ul>
+              <% project.achievements.each do |achievement| %>
+                <li><%= achievement %></li>
+              <% end %>
+              </ul>
+            <% end %>
+
+            <hr>
+          <% end %>
+        </div>
+        <div class="col-12">
+          <h2>Education</h2>
+          <h2><%= education.university.name %></h2>
+          <h3><%= education.university.title %> ( <%= education.university.start_date %> – <%= education.university.end_date %> )</h3>
+        </div>
+        <div class="col-12">
+          <h2>Certification</h2>
+          <% certification.courses.each do |course| %>
+            <!-- courses should be presented as a list (<ul>) -->
+            <h3><%= course.title %> ( <%= course.company %> )</h3>
+            <div><a href="<%= course.homepage %>"><%= course.homepage %></a></div>
+          <% end %>
+        </div>
+        <div class="col-12">
+          <h2>Interests</h2>
+          <ul>
+          <% interests.each do |interest| %>
+            <li><%= interest %></li>
+          <% end %>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
