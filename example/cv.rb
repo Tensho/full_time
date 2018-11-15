@@ -191,8 +191,6 @@ require 'full_time'
     end
 
     company 'Donetskoblgaz PLC' do
-      # description 'Donetskoblgaz is the regional gas transfer monopolist'
-
       project 'Internal accounting system', start_date: 'July 2008', end_date: 'October 2012' do
         homepage ''
         description ''
