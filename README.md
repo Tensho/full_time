@@ -124,6 +124,9 @@ INTRO
 ```
 * Add "Skills" –> "Services" (Mandrill, Pingdom, etc)
 * Add the different template engines, e.g. render to `pdf`, `doc`, etc
+* Add LinkedIn export support
+* Add CI
+* Add badges
   
 ## Development
 
@@ -140,6 +143,7 @@ INTRO
 ## Release
 
 - Update the version number in `version.rb`
+- `bin/rake install` – build and install gem into system gems
 - `bin/rake release` – create a git tag for the version, push git commits and tags and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
