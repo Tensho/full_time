@@ -105,17 +105,6 @@ For the more extensive example checkout `example/cv.rb`.
 ## TODO
 
 * Present any collection with a list in the template
-* Extend "Certification" with `expire_date`, `license_number`, `url`, `authority` (like in LinkedIn) + Adjust README "High-Level Structure"
-```ruby
-certificate do
-  title 'AWS Certified Developer - Associate (DVA)'
-  authority 'Amazon Web Services'
-  expire_date 'March 2020'
-  license_number 'S4BBW3CKBBQQQM94'
-  homepage 'https://aws.amazon.com/certification/certified-developer-associate'
-  url 'https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2018-03-01&ci=AWS00435488'
-end
-```
 * Add "Intro"
 ```ruby
 intro <<-INTRO
@@ -126,7 +115,7 @@ INTRO
 ```
 * Add "Skills" –> "Services" (Mandrill, Pingdom, etc)
 * Add the different template engines, e.g. render to `pdf`, `doc`, etc
-* Add LinkedIn export support
+* Add LinkedIn export
 * Add CI
 * Add badges
   

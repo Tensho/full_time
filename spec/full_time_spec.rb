@@ -100,9 +100,12 @@ describe FullTime do
 
           it { is_expected.to be_instance_of(FullTime::Certificate) }
 
-          it('title') { expect(certificate.title).to eq('Two Hand Shooting: Part 1') }
-          it('company') { expect(certificate.company).to eq('Bang! Bang! Bang!') }
-          it('homepage') { expect(certificate.homepage).to eq('https://bangbangbang.com') }
+          it('title') { expect(certificate.title).to eq('Two Hand Shooting - Professional') }
+          it('authority') { expect(certificate.authority).to eq('Bang! Bang! Bang!') }
+          it('start_date') { expect(certificate.start_date).to eq('July 2019') }
+          it('end_date') { expect(certificate.end_date).to eq('July 2021') }
+          it('license_number') { expect(certificate.license_number).to eq('BERRETA002') }
+          it('url') { expect(certificate.url).to eq('https://bangbangbang.com/public/BERRETA002') }
         end
       end
     end

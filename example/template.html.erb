@@ -72,8 +72,8 @@
           <h2>Certification</h2>
           <% certification.certificates.each do |certificate| %>
             <!-- certificates should be presented as a list (<ul>) -->
-            <h3><%= certificate.title %> ( <%= certificate.company %> )</h3>
-            <div><a href="<%= certificate.homepage %>"><%= certificate.homepage %></a></div>
+            <h3><%= certificate.authority %> – <%= certificate.title %> <% if certificate.start_date && certificate.end_date %>(<%= certificate.start_date %> – <%= certificate.end_date %>)<% end %></h3>
+            <div><a href="<%= certificate.url %>"><%= certificate.license_number %></a></div>
           <% end %>
         </div>
         <div class="col-12">

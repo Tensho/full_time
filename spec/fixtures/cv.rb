@@ -74,15 +74,21 @@ FullTime.profile do
 
   certification do
     certificate do
-      title 'Two Hand Shooting: Part 1'
-      company 'Bang! Bang! Bang!'
-      homepage 'https://bangbangbang.com'
+      title 'Two Hand Shooting - Professional'
+      authority 'Bang! Bang! Bang!'
+      start_date 'July 2019'
+      end_date 'July 2021'
+      license_number 'BERRETA002'
+      url 'https://bangbangbang.com/public/BERRETA002'
     end
 
     certificate do
-      title 'Two Hand Shooting: Part 2'
-      company 'Bang! Bang! Bang!'
-      homepage 'https://bangbangbang.com'
+      title 'Two Hand Shooting - Associate'
+      authority 'Bang! Bang! Bang!'
+      start_date 'July 2018'
+      end_date 'July 2020'
+      license_number 'BERRETA001'
+      url 'https://bangbangbang.com/public/BERRETA001'
     end
   end
 
