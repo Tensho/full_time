@@ -44,7 +44,7 @@ FullTime.profile do
 
       project 'Resolver', start_date: 'January 2016', end_date: 'Current' do
         homepage 'https://resolver.co.uk'
-        description 'Free online tool for complaints and claims'
+        description 'Free online tool for complaints and claims.'
         title 'Senior Software Engineer & Team Lead'
 
         technologies do

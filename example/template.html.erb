@@ -38,29 +38,32 @@
         <div class="col-12">
           <h2>Employment</h2>
           <% employment.companies.each do |company| %>
-            <!-- companies should be presented as a list (<ul>) -->
             <h3><%= company.name %></h3>
             <div><a href="<%= company.homepage %>"><%= company.homepage %></a></div>
 
             <% company.projects.each do |project| %>
               <!-- projects should be presented as a list (<ul>) -->
-              <h4><%= project.name %> ( <%= project.start_date %> – <%= project.end_date %> )</h4>
-              <div><a href="<%= project.homepage %>"><%= project.homepage %></a></div>
-              <p><%= project.description %></p>
-              <div><%= project.title %></div>
-
-              <h5>Technologies</h5>
               <ul>
-              <% project.technologies.each do |technology| %>
-                <li><%= technology %></li>
-              <% end %>
-              </ul>
+                <li>
+                  <h4><%= project.name %> ( <%= project.start_date %> – <%= project.end_date %> )</h4>
+                  <div><a href="<%= project.homepage %>"><%= project.homepage %></a></div>
+                  <p><%= project.description %></p>
+                  <div><%= project.title %></div>
 
-              <h4>Achievements</h4>
-              <ul>
-              <% project.achievements.each do |achievement| %>
-                <li><%= achievement %></li>
-              <% end %>
+                  <h5>Technologies</h5>
+                  <ul>
+                  <% project.technologies.each do |technology| %>
+                    <li><%= technology %></li>
+                  <% end %>
+                  </ul>
+
+                  <h4>Achievements</h4>
+                  <ul>
+                  <% project.achievements.each do |achievement| %>
+                    <li><%= achievement %></li>
+                  <% end %>
+                  </ul>
+                </li>
               </ul>
             <% end %>
 
@@ -76,8 +79,12 @@
           <h2>Certification</h2>
           <% certification.certificates.each do |certificate| %>
             <!-- certificates should be presented as a list (<ul>) -->
-            <h3><%= certificate.authority %> – <%= certificate.title %> <% if certificate.start_date && certificate.end_date %>(<%= certificate.start_date %> – <%= certificate.end_date %>)<% end %></h3>
-            <div><a href="<%= certificate.url %>"><%= certificate.license_number %></a></div>
+            <ul>
+              <li>
+                <h3><%= certificate.authority %> – <%= certificate.title %> <% if certificate.start_date && certificate.end_date %>(<%= certificate.start_date %> – <%= certificate.end_date %>)<% end %></h3>
+                <div><a href="<%= certificate.url %>"><%= certificate.license_number %></a></div>
+              </li>
+            </ul>
           <% end %>
         </div>
         <div class="col-12">
