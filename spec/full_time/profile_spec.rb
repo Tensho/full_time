@@ -10,7 +10,8 @@ describe FullTime::Profile do
     linkedin: 'https://www.linkedin.com/in/dannychoo',
     goodreads: 'https://goodreads.com/user/show/39664841-danny-choo',
     location: 'Tokyo, Japan',
-    extra: 'Visa sponsorship required'
+    extra: 'Visa sponsorship required',
+    intro: 'Dolls connoisseur, ergonomics tinker'
 
   describe '#employment' do
     context 'without block' do

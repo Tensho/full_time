@@ -11,6 +11,8 @@ FullTime.profile do
   location 'Kiev, Ukraine, 08200 (open to relocate)'
   extra 'Visa: Sponsorship required'
 
+  intro '10+ years in IT industry. Focused on cloud DevOps and backend web development. Fond of operating systems, networking, distributed systems, book reading, go, tea. Open source software contributor. Interested in relocation to Australia.'
+
   skills do
     • 'Languages: Ruby, SQL, JavaScript/CoffeeScript, HTML/Slim/Haml, CSS/SASS, Elixir, HCL'
     • 'Frameworks: Rails'

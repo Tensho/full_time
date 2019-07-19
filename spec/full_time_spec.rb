@@ -12,6 +12,8 @@ describe FullTime do
     it('github') { expect(profile.github).to eq('https://github.com/revy') }
     it('location') { expect(profile.location).to eq('Roanapur') }
 
+    it('intro') { expect(profile.intro).to eq('Maladjusted, confident, loud,easily bored, battle hardened, battle hungry, sarcastic, rude, deadly, very competitive, cynical, confident, aggressive, and extremely ill-tempered nihilist with a dark sense of humor.') }
+
     describe 'employment' do
       subject(:employment) { profile.employment }
 
@@ -121,7 +123,7 @@ describe FullTime do
 
   describe '.export!' do
     context 'HTML' do
-      it 'exports ruby profile within ' do
+      it 'exports ruby profile within ERB template' do
         profile
 
         expect do

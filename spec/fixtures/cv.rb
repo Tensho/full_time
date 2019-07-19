@@ -5,6 +5,8 @@ FullTime.profile do
   github 'https://github.com/revy'
   location 'Roanapur'
 
+  intro 'Maladjusted, confident, loud,easily bored, battle hardened, battle hungry, sarcastic, rude, deadly, very competitive, cynical, confident, aggressive, and extremely ill-tempered nihilist with a dark sense of humor.'
+
   employment do
     company 'Headshot' do
       homepage 'http://headshot.com'

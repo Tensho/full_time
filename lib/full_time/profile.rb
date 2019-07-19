@@ -2,7 +2,7 @@ module FullTime
   class Profile
     extend FullTime::DSL
 
-    dsl_attr_accessor :name, :email, :homepage, :github, :linkedin, :twitter, :goodreads, :location, :extra
+    dsl_attr_accessor :name, :email, :homepage, :github, :linkedin, :twitter, :goodreads, :location, :extra, :intro
 
     def initialize
       @skills = List.new

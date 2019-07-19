@@ -105,14 +105,6 @@ For the more extensive example checkout `example/cv.rb`.
 ## TODO
 
 * Present any collection with a list in the template
-* Add "Intro"
-```ruby
-intro <<-INTRO
- Software Engineer
- 10 years in IT industry
- Engineering, development, delivery
-INTRO
-```
 * Add "Skills" –> "Services" (Mandrill, Pingdom, etc)
 * Add the different template engines, e.g. render to `pdf`, `doc`, etc
 * Add LinkedIn export
