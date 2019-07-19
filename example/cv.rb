@@ -1,6 +1,6 @@
 require 'full_time'
 
-@profile = FullTime.profile do
+FullTime.profile do
   name 'Andrew Babichev'
   email 'andrew.babichev@gmail.com'
   homepage 'http://tensho.github.io'
@@ -12,7 +12,7 @@ require 'full_time'
   extra 'Visa: Sponsorship required'
 
   skills do
-    • 'Languages: Ruby, SQL, JavaScript/CoffeeScript, HTML/Slim/Haml, CSS/SASS, Elixir'
+    • 'Languages: Ruby, SQL, JavaScript/CoffeeScript, HTML/Slim/Haml, CSS/SASS, Elixir, HCL'
     • 'Frameworks: Rails'
     • 'Databases: MySQL, Postgres, DynamoDB, MongoDB, Neo4j'
     • 'Queues/Message Brokers: Redis, RabbitMQ'
@@ -268,7 +268,7 @@ require 'full_time'
     • 'Software Architecture'
     • 'Web Technologies'
     • 'Reading'
-    • 'Arduino'
+    • 'Open Source'
     • 'Cooking'
     • 'Tea'
     • 'Chess'

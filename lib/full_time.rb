@@ -14,8 +14,19 @@ require "full_time/course"
 
 module FullTime
   def self.profile(&block)
-    profile = Profile.new
-    profile.instance_eval(&block)
-    profile
+    if block_given?
+      @profile = Profile.new
+      @profile.instance_eval(&block)
+    end
+
+    @profile
+  end
+
+  def self.export!(type, template_path)
+    case type
+    when :html
+      require 'tilt'
+      puts Tilt.new(template_path).render(self.profile)
+    end
   end
 end
