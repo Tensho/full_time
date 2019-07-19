@@ -324,14 +324,9 @@ For the more extensive example checkout `example/cv.rb`.
     * Course
 ```
   
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/rake` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
 ## TODO
 
+* Check "gem build" warning on dependencies 
 * Allow to pass CV and template file paths to executable, like `$full_time cv.rb template.html.erb`
 * Present any collection with a list in the template
 * Extend "Certification" with `expire_date`, `license_number`, `url`, `authority` (like in LinkedIn) + Adjust README "High-Level Structure"
@@ -355,6 +350,23 @@ INTRO
 ```
 * Add "Skills" –> "Services" (Mandrill, Pingdom, etc)
 * Add the different template engines, e.g. render to `pdf`, `doc`, etc
+  
+## Development
+
+- Checkout repo
+- `bin/setup` – install required dependencies
+- `bin/console` – get console for experiments
+- `bin/rake install` – install gem onto local machine
+
+## Test
+
+- `bin/rspec spec/full_time_spec.rb` – run single test
+- `bin/rake` – run all tests
+
+## Release
+
+- Update the version number in `version.rb`
+- `bin/rake release` – create a git tag for the version, push git commits and tags and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 

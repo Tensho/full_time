@@ -1,3 +1,5 @@
+require "full_time/version"
+
 require "full_time/dsl"
 require "full_time/list"
 

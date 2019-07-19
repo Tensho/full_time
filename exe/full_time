@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+# frozen_string_literal: true
+
+require 'optparse'
+require "full_time"
+
+options = {}
+
+OptionParser.new do |opts|
+  opts.banner = "Usage: full_time [options] file.rb"
+  opts.separator ""
+  opts.separator "Options:"
+
+  opts.on('-e', '--export TARGET', %i(html linkedin), "Select export target: html, linkedin")
+  opts.on('-v', '--version', "Show version") do
+    puts FullTime::VERSION
+    exit
+  end
+  opts.on('-h', '--help', "Help") do
+    puts opts
+    exit
+  end
+end.parse!(into: options)
+
+FullTime.generate!(ARGV[0], options[:export])
