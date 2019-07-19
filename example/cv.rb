@@ -227,37 +227,37 @@ FullTime.profile do
   end
 
   certification do
-    course do
+    certificate do
       title 'AWS Certified Solutions Architect - Associate (SAA)'
       company 'Amazon Web Services'
       homepage 'https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2018-04-02&ci=AWS00435488'
     end
 
-    course do
+    certificate do
       title 'AWS Certified Developer - Associate (DVA)'
       company 'Amazon Web Services'
       homepage 'https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2018-03-01&ci=AWS00435488'
     end
 
-    course do
+    certificate do
       title 'Web Application Architectures'
       company 'Coursera'
       homepage 'https://www.coursera.org/course/webapplications'
     end
 
-    course do
+    certificate do
       title 'Algorithms: Design and Analysis, Part 1'
       company 'Coursera'
       homepage 'https://www.coursera.org/course/algo'
     end
 
-    course do
+    certificate do
       title 'Gamification'
       company 'Coursera'
       homepage 'https://www.coursera.org/course/Gamification'
     end
 
-    course do
+    certificate do
       title 'Functional Programming Principles in Scala'
       company 'Coursera'
       homepage 'https://www.coursera.org/course/progfun'

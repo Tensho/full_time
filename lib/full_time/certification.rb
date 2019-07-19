@@ -1,27 +1,26 @@
 module FullTime
   class Certification
-    attr_accessor :courses
+    attr_accessor :certificates
 
     def initialize
-      @courses = List.new
+      @certificates = List.new
     end
 
-    def courses(&block)
+    def certificates(&block)
       if block_given?
-        @courses.instance_eval(&block)
+        @certificates.instance_eval(&block)
       end
 
-      @courses
+      @certificates
     end
 
-    def course(&block)
+    def certificate(&block)
       if block_given?
-        course = Course.new
-        course.instance_eval(&block)
-        @courses << course
-        course
+        certificate = Certificate.new
+        certificate.instance_eval(&block)
+        @certificates << certificate
+        certificate
       end
     end
-    # alias :course, :certification
   end
 end

@@ -90,19 +90,19 @@ describe FullTime do
 
       it { is_expected.to be_instance_of(FullTime::Certification) }
 
-      describe 'courses' do
-        subject(:courses) { certification.courses }
+      describe 'certificates' do
+        subject(:certificates) { certification.certificates }
 
-        it { expect(courses.count).to eq(2) }
+        it { expect(certificates.count).to eq(2) }
 
-        describe 'course' do
-          subject(:course) { courses.first }
+        describe 'certificate' do
+          subject(:certificate) { certificates.first }
 
-          it { is_expected.to be_instance_of(FullTime::Course) }
+          it { is_expected.to be_instance_of(FullTime::Certificate) }
 
-          it('title') { expect(course.title).to eq('Two Hand Shooting: Part 1') }
-          it('company') { expect(course.company).to eq('Bang! Bang! Bang!') }
-          it('homepage') { expect(course.homepage).to eq('https://bangbangbang.com') }
+          it('title') { expect(certificate.title).to eq('Two Hand Shooting: Part 1') }
+          it('company') { expect(certificate.company).to eq('Bang! Bang! Bang!') }
+          it('homepage') { expect(certificate.homepage).to eq('https://bangbangbang.com') }
         end
       end
     end

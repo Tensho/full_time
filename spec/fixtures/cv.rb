@@ -73,13 +73,13 @@ FullTime.profile do
   end
 
   certification do
-    course do
+    certificate do
       title 'Two Hand Shooting: Part 1'
       company 'Bang! Bang! Bang!'
       homepage 'https://bangbangbang.com'
     end
 
-    course do
+    certificate do
       title 'Two Hand Shooting: Part 2'
       company 'Bang! Bang! Bang!'
       homepage 'https://bangbangbang.com'

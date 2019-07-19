@@ -70,10 +70,10 @@
         </div>
         <div class="col-12">
           <h2>Certification</h2>
-          <% certification.courses.each do |course| %>
-            <!-- courses should be presented as a list (<ul>) -->
-            <h3><%= course.title %> ( <%= course.company %> )</h3>
-            <div><a href="<%= course.homepage %>"><%= course.homepage %></a></div>
+          <% certification.certificates.each do |certificate| %>
+            <!-- certificates should be presented as a list (<ul>) -->
+            <h3><%= certificate.title %> ( <%= certificate.company %> )</h3>
+            <div><a href="<%= certificate.homepage %>"><%= certificate.homepage %></a></div>
           <% end %>
         </div>
         <div class="col-12">

@@ -10,7 +10,7 @@ require "full_time/certification"
 require "full_time/company"
 require "full_time/project"
 require "full_time/university"
-require "full_time/course"
+require "full_time/certificate"
 
 module FullTime
   def self.profile(&block)

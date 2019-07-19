@@ -68,7 +68,7 @@ FullTime.profile do
   end
 
   certification do
-    course do
+    certificate do
       title 'Two Hand Shooting: Part 1'
       company 'Bang! Bang! Bang!'
       homepage 'https://bangbangbang.com'
@@ -99,7 +99,7 @@ For the more extensive example checkout `example/cv.rb`.
   * Education
     * University
   * Certification
-    * Course
+    * Certificate
 ```
   
 ## TODO
