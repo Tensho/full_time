@@ -2,7 +2,7 @@ require 'shared_examples/dsl_attribute_accessors'
 
 describe FullTime::Company do
   it_embraces 'DSL attribute accessors',
-    homepage: 'http://dannychoo.com'
+    homepage: 'https://dannychoo.com'
 
   %i(name).each do |attribute|
     it "has #{attribute} attribute" do

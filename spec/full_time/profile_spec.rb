@@ -4,7 +4,7 @@ describe FullTime::Profile do
   it_embraces 'DSL attribute accessors',
     name: 'Danny Choo',
     email: 'danny@dannychoo.com',
-    homepage: 'dannychoo.com',
+    homepage: 'https://dannychoo.com',
     github: 'https://github.com/dannychoo',
     twitter: 'https://twitter.com/dannychoo',
     linkedin: 'https://www.linkedin.com/in/dannychoo',
