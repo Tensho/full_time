@@ -29,6 +29,8 @@ Depending on your export target you have to install the next gems:
 Declare your CV within DSL:
 
 ```ruby
+# cv.rb
+
 FullTime.profile do
   name 'Rebecca Lee'
   email 'revy@blacklagoon.moe'
@@ -81,9 +83,9 @@ FullTime.profile do
 end
 ```
 
-The next command converts your CV to HTML:
+The next command converts your CV to HTML within custom ERB template:
 
-    $ full_time -t html ./example/cv.rb ./example/template.html.erb > ./example/cv.html 
+    $ full_time -t html cv.rb ./example/template.html.erb > cv.html 
 
 For the more extensive example checkout `example/cv.rb`.
 
