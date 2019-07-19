@@ -105,7 +105,6 @@ For the more extensive example checkout `example/cv.rb`.
 ## TODO
 
 * Present any collection with a list in the template
-* Add "Skills" –> "Services" (Mandrill, Pingdom, etc)
 * Add the different template engines, e.g. render to `pdf`, `doc`, etc
 * Add LinkedIn export
 * Add CI

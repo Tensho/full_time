@@ -34,6 +34,7 @@ FullTime.profile do
     • 'OS/Execution Environment: MacOS, Linux, Docker'
     • 'CMS: Refinery'
     • 'IDE/Editor: RubyMine, Sublime Text, Vim'
+    • 'Services: Gmail, Mandrill, Pingdom, Geckoboard, HoneyBadger, Slack, Keybase, Zoom'
     • 'Methodology: Kanban, Scrum'
   end
 
