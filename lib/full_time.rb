@@ -15,16 +15,20 @@ require "full_time/certificate"
 require 'tilt'
 
 module FullTime
-  def self.profile(&block)
-    if block_given?
-      @profile = Profile.new
-      @profile.instance_eval(&block)
+
+  class << self
+    def profile(&block)
+      if block_given?
+        @profile = Profile.new
+        @profile.instance_eval(&block)
+      end
+
+      @profile
     end
 
-    @profile
+    def render(template_path)
+      Tilt.new(template_path).render(profile)
+    end
   end
 
-  def self.render(template_path)
-    Tilt.new(template_path).render(self.profile)
-  end
 end
