@@ -8,11 +8,10 @@ require "full_time"
 options = {}
 
 OptionParser.new do |opts|
-  opts.banner = "Usage: full_time [options] input template"
+  opts.banner = "Usage: full_time [options] [input] [template]"
   opts.separator ""
   opts.separator "Options:"
 
-  opts.on('-t', '--type TARGET', %i(html linkedin), "Export type: html, linkedin")
   opts.on('-v', '--version', "Version") do
     puts FullTime::VERSION
     exit
@@ -26,4 +25,4 @@ end.parse!(into: options)
 # Read DSL
 require ARGV[0]
 
-FullTime.export!(options[:type], ARGV[1])
+puts FullTime.render(ARGV[1])

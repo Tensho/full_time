@@ -100,7 +100,7 @@ FullTime.profile do
     company 'GlobalLogic' do
       homepage 'http://globallogic.com'
 
-      project 'Advanced creative platform for online advertising', start_date: 'November 2014', end_date: 'January 2016' do
+      project 'ACP', start_date: 'November 2014', end_date: 'January 2016' do
         description 'Advanced creative platform for online advertising, which allows you to automate the processes related to creative services. It supports both platforms – desktop and mobile.'
         title 'Senior Software Engineer'
 

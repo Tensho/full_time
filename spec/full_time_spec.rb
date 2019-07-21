@@ -121,14 +121,20 @@ describe FullTime do
     end
   end
 
-  describe '.export!' do
+  describe '.render' do
     context 'HTML' do
-      it 'exports ruby profile within ERB template' do
+      it 'renders ruby profile within ERB template' do
         profile
 
-        expect do
-          FullTime.export!(:html, 'spec/fixtures/template.html.erb')
-        end.to output(/<h2>Rebecca Lee<\/h2>/).to_stdout
+        expect(FullTime.render('spec/fixtures/template.html.erb')).to match(/<h2>Rebecca Lee<\/h2>/)
+      end
+    end
+
+    context 'PDF' do
+      it 'renders ruby profile within Prawn template' do
+        profile
+
+        expect(FullTime.render('spec/fixtures/template.pdf.prawn')).to match(/PDF-1\.3/)
       end
     end
   end

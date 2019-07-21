@@ -12,6 +12,8 @@ require "full_time/project"
 require "full_time/university"
 require "full_time/certificate"
 
+require 'tilt'
+
 module FullTime
   def self.profile(&block)
     if block_given?
@@ -22,11 +24,7 @@ module FullTime
     @profile
   end
 
-  def self.export!(type, template_path)
-    case type
-    when :html
-      require 'tilt'
-      puts Tilt.new(template_path).render(self.profile)
-    end
+  def self.render(template_path)
+    Tilt.new(template_path).render(self.profile)
   end
 end

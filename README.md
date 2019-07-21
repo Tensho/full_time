@@ -1,28 +1,19 @@
 # FullTime
 
-Handle your CV like a pro
+The gem allows to declare your CV with Ruby DSL and render it further with [`tilt`](https://github.com/rtomayko/tilt) supported engines. 
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'full_time'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install full_time
-    
-Depending on your export target you have to install the next gems:
 
-| Target   | Gem                                      |
-| -------- | ---------------------------------------- |
-| HTML     | [tilt](https://github.com/rtomayko/tilt) |
+For some formats you require additional gems: 
+    
+| Target  | Gem                                        |
+| ------- | ------------------------------------------ |
+| HTML    | –                                          |
+| PDF     | [prawn](https://github.com/prawnpdf/prawn) |
+
+ Check out template engines supported by [`tilt`](https://github.com/rtomayko/tilt#tilt---).
 
 ## Usage
 
@@ -83,13 +74,17 @@ FullTime.profile do
 end
 ```
 
-The next command converts your CV to HTML within custom ERB template:
+Add custom template of your choice and convert CV Ruby file to HTML file within custom ERB template:
 
-    $ full_time -t html cv.rb ./example/template.html.erb > cv.html 
+    $ full_time -t html ./cv.rb template.html.erb > cv.html
+    
+or PDF file within custom Prawn template:
 
-For the more extensive example checkout `example/cv.rb`.
+    $ full_time -t html ./cv.rb template.pdf.prawn > cv.pdf
 
-## High-Level Structure
+For the more extensive example checkout `example` folder.
+
+## High-Level CV Structure
 
 ```
 * Profile
@@ -104,8 +99,7 @@ For the more extensive example checkout `example/cv.rb`.
   
 ## TODO
 
-* Add the different template engines, e.g. render to `pdf`, `doc`, etc
-* Add LinkedIn export
+* Investigate LinkedIn API
 * Add CI
 * Add badges
   
