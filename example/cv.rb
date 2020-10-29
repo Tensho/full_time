@@ -8,10 +8,10 @@ FullTime.profile do
   twitter 'https://twitter.com/Tensh0'
   linkedin 'https://www.linkedin.com/in/andrewbabichev'
   goodreads 'https://goodreads.com/tensho'
-  location 'Kiev, Ukraine, 08200 (open to relocate)'
+  location 'Irpin, Ukraine, 08206'
   extra 'Visa: Sponsorship required'
 
-  intro '10+ years in IT industry. Focused on cloud DevOps and backend web development. Fond of operating systems, networking, distributed systems, book reading, go, tea. Open source software contributor. Interested in relocation to Australia.'
+  intro '12+ years in IT industry. Focused on cloud DevOps and backend web development. Fond of operating systems, networking, distributed systems, book reading, baduk, tea. Open source software contributor.'
 
   skills do
     • 'Languages: Ruby, SQL, JavaScript/CoffeeScript, HTML/Slim/Haml, CSS/SASS, Elixir, HCL'
@@ -29,20 +29,46 @@ FullTime.profile do
     • 'Infrastructure Management: Terraform'
     • 'Task Management: Trello, JIRA, GitHub Projects'
     • 'Version Source Control: Git'
-    • 'Collaboration: GitHub, Slack'
-    • 'Continuous Integration: CircleCI, TravisCI'
+    • 'Collaboration: GitHub, GitLab, Confluence, Slack'
+    • 'Continuous Integration: CircleCI, TravisCI, GitLab CI/CD'
     • 'OS/Execution Environment: MacOS, Linux, Docker'
     • 'CMS: Refinery'
-    • 'IDE/Editor: RubyMine, Sublime Text, Vim'
-    • 'Services: Gmail, Mandrill, Pingdom, Geckoboard, HoneyBadger, Slack, Keybase, Zoom'
-    • 'Methodology: Kanban, Scrum'
+    • 'IDE/Editor: RubyMine, GoLand, Sublime Text, Vim'
+    • 'Services: Gmail, Mandrill, Pingdom, Geckoboard, HoneyBadger, Keybase, Zoom'
+    • 'Methodology: Kanban, Scrum, Programming Motherfucker'
   end
 
   employment do
+    company 'Grammarly' do
+      homepage 'http://grammarly.com'
+
+      project 'Platform', start_date: 'August 2019', end_date: 'Current' do
+        title 'Platform Engineer'
+
+        technologies do
+          • 'Primary Languages: Go, HCL'
+          • 'Secondary Languages: Bash'
+          • 'AWS: ECS, EC2, EBS, ASG, ALB/NLB, Route53, RDS, S3, VPC, TGW, IAM, CloudFront, CloudWatch, CloudTrail, Lambda, SNS, SecurityHub, WAF, API Gateway'
+          • 'Server Templating: Packer'
+          • 'Configuration Management: Ansible'
+          • 'Infrastructure Management: Terraform'
+          • 'Web Servers: Nginx'
+          • 'OS/Execution Environment: Amazon Linux 2 (CentOS), Ubuntu, Alpine, MacOS, Docker, Windows'
+        end
+
+        achievements do
+          • 'Develop AWS infrastructure providing the basement for secure, scalable, available and reliable Grammarly services'
+          • 'Take part in scheduled on-call activities supporting Platform goodies and helping engineers around'
+          • 'Support company needs as AWS WorkSpaces service owner in terraform-provider-aws project'
+          • 'Drive DevOps and SRE principles'
+        end
+      end
+    end
+
     company 'Intetics' do
       homepage 'http://intetics.com'
 
-      project 'Resolver', start_date: 'January 2016', end_date: 'Current' do
+      project 'Resolver', start_date: 'January 2016', end_date: 'August 2019' do
         homepage 'https://resolver.co.uk'
         description 'Free online tool for complaints and claims.'
         title 'Senior Software Engineer & Team Lead'
@@ -56,7 +82,8 @@ FullTime.profile do
           • 'Databases: MySQL, DynamoDB, MongoDB, Postgres, Redis, Memcached, Neo4j, AuroraDB'
           • 'Queues/Message Brokers: Redis, RabbitMQ'
           • 'AWS: EC2, EBS, ASG, ECS, ELB, Route53, RDS, S3, VPC, IAM, CloudFront, CloudWatch, CloudTrail, DynamoDB, ElastiCache, CloudFormation, Lambda, SNS'
-          • 'Configuration Management: Puppet, Packer'
+          • 'Server Templating: Packer'
+          • 'Configuration Management: Puppet'
           • 'Infrastructure Management: Terraform'
           • 'Web Servers: Nginx'
           • 'OS/Execution Environment: Ubuntu, Alpine, MacOS, Docker'
@@ -64,17 +91,15 @@ FullTime.profile do
         end
 
         achievements do
-          • 'Setup test framework and covered with specs existing and new features'
-          • 'Deployment scripts support and enhancement'
+          • 'Extended test framework and covered with specs existing and new features'
+          • 'Introduced continuous delivery pipeline (GitHub, CircleCI, Capistrano, Slack)'
           • 'Setup backup model for MySQL to AWS S3 and Rackspace Cloud Files'
-          • 'Developed credit card number concealer'
           • "Contributed filter parameters config fixes to 'rails' and 'dookeeper' gems in the sake of application"
           • 'Setup and integrated web application with IBM Bluemix cognitive services AlchemyAPI, Watson and Tone Analyzer'
           • 'Developed and implemented HTML email sanitizers (loofah scrubbers)'
           • 'Consolidated MailChimp/Mandrill templates workflow, introduced dynamic content'
           • 'Setup CDN (AWS CloudFront distributions)'
-          • 'Setup CI/CD (GitHub, CircleCI, Slack)'
-          • 'Integrated web application with secure (TLS) email server'
+          • 'Integrated Mandrill and custom TLS email server outbound/inbound mailing systems for the multiple regions'
           • 'Internationalized and localized web application'
           • 'Adjusted Puppet manifests and node definitions for the existing and new services in the sake of the better reliability of infrastructure configuration'
           • 'Adjusted custom Ruby scripts for AWS EC2 instances provisioning'
@@ -88,11 +113,10 @@ FullTime.profile do
           • "Contributed unparsed mail field value to 'mail' gem in the sake of the application"
           • 'Replaced Rails protected attributes with strong parameters'
           • 'Introduced Docker and AWS ECS'
-          • 'Refactored and extended inbound emails receiving system to the multiple regions'
-          • 'Adopted Packer + Terraform for AutoScaling purposes and Blue/Green deployments in the multi-region environment'
+          • 'Introduced Packer + Terraform for AutoScaling purposes and Blue/Green deployments in the multi-region environment'
           • 'Interviewed and mentored other developers in the highly distributed team'
           • 'Introduced new developers to the application'
-          • 'Spread out Agile principles and Kanban methodology to the team'
+          • 'Spread out Agile principles and Scrum methodology to the team'
         end
       end
     end
@@ -281,7 +305,7 @@ FullTime.profile do
     • 'Cooking'
     • 'Tea'
     • 'Chess'
-    • 'Go'
+    • 'Go (Baduk)'
     • 'Japan'
   end
 end
