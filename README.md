@@ -124,3 +124,5 @@ For the more extensive example checkout `example` folder.
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/Tensho/full_time.
+
+<!-- DonnuCTF{1_am_50_g1ad_t0_5ee_y0u} -->
