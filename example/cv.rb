@@ -11,11 +11,11 @@ FullTime.profile do
   location 'Irpin, Ukraine, 08206'
   extra 'Visa: Sponsorship required'
 
-  intro '12+ years in IT industry. Focused on cloud DevOps and backend web development. Fond of operating systems, networking, distributed systems, book reading, baduk, tea. Open source software contributor.'
+  intro '13+ years in IT industry. Focused on cloud DevOps and backend web development. Fond of operating systems, networking, distributed systems, book reading, baduk, tea. Open source software contributor.'
 
   skills do
-    • 'Languages: Ruby, SQL, JavaScript/CoffeeScript, HTML/Slim/Haml, CSS/SASS, Elixir, HCL'
-    • 'Frameworks: Rails'
+    • 'Languages: Ruby, Go, SQL, JavaScript/CoffeeScript, HTML/Slim/Haml, CSS/SASS, Elixir, HCL'
+    • 'Frameworks: Rails, Sidekiq'
     • 'Databases: MySQL, Postgres, DynamoDB, MongoDB, Neo4j'
     • 'Queues/Message Brokers: Redis, RabbitMQ'
     • 'Testing: RSpec, Capybara, FactoryBot, Jasmine'
@@ -25,24 +25,47 @@ FullTime.profile do
     • 'Web Servers: Nginx'
     • 'IaaS: AWS (EC2, EBS, ASG, ECS, ELB, Route53, RDS, S3, VPC, IAM, CloudFront, CloudWatch, CloudTrail, DynamoDB, ElastiCache, CloudFormation, Lambda, SNS)'
     • 'PaaS: Heroku'
-    • 'Configuration Management: Puppet, Packer'
-    • 'Infrastructure Management: Terraform'
-    • 'Task Management: Trello, JIRA, GitHub Projects'
+    • 'Configuration Management: Packer, Chef, Puppet'
+    • 'Infrastructure Management: Terraform, Terragrunt'
+    • 'Task Management: JIRA, GitHub Projects, Trello'
     • 'Version Source Control: Git'
-    • 'Collaboration: GitHub, GitLab, Confluence, Slack'
-    • 'Continuous Integration: CircleCI, TravisCI, GitLab CI/CD'
-    • 'OS/Execution Environment: MacOS, Linux, Docker'
+    • 'Collaboration: GitHub, GitLab, Confluence, Slack, Zoom'
+    • 'Continuous Integration: CircleCI, TravisCI, GitLab CI/CD, GitHub Actions'
+    • 'OS/Execution Environment: MacOS, Linux, Docker, Kubernetes'
     • 'CMS: Refinery'
     • 'IDE/Editor: RubyMine, GoLand, Sublime Text, Vim'
-    • 'Services: Gmail, Mandrill, Pingdom, Geckoboard, HoneyBadger, Keybase, Zoom'
+    • 'Services: Gmail, Mandrill, Pingdom, Geckoboard, HoneyBadger, NewRelic'
     • 'Methodology: Kanban, Scrum, Programming Motherfucker'
   end
 
   employment do
+    company 'LiveLink Technology' do
+      homepage 'https://www.livelinktechnology.net'
+
+      project 'DICE', start_date: 'February 2021', end_date: 'Current' do
+        title 'System Engineer'
+
+        technologies do
+          • 'Primary Languages: Go, HCL'
+          • 'Secondary Languages: Bash'
+          • 'AWS: ECS, EC2, EBS, ASG, ALB/NLB, Route53, RDS, S3, VPC, TGW, IAM, CloudFront, CloudWatch, CloudTrail, Lambda, SNS, SecurityHub, WAF, API Gateway'
+          • 'Server Templating: Packer'
+          • 'Configuration Management: Ansible'
+          • 'Infrastructure Management: Terraform'
+          • 'Web Servers: Nginx'
+          • 'OS/Execution Environment: Amazon Linux 2 (CentOS), Ubuntu, Alpine, MacOS, Docker, Windows'
+        end
+
+        achievements do
+          • 'NewRelic'
+        end
+      end
+    end
+
     company 'Grammarly' do
       homepage 'http://grammarly.com'
 
-      project 'Platform', start_date: 'August 2019', end_date: 'Current' do
+      project 'Platform', start_date: 'August 2019', end_date: 'February 2021' do
         title 'Platform Engineer'
 
         technologies do
@@ -57,16 +80,18 @@ FullTime.profile do
         end
 
         achievements do
+          # This is not an exact achievement, but duties (responsibilities)
+          #
           • 'Develop AWS infrastructure providing the basement for secure, scalable, available and reliable Grammarly services'
           • 'Take part in scheduled on-call activities supporting Platform goodies and helping engineers around'
-          • 'Support company needs as AWS WorkSpaces service owner in terraform-provider-aws project'
+          • 'Represent company as AWS WorkSpaces service owner in terraform-provider-aws project'
           • 'Drive DevOps and SRE principles'
         end
       end
     end
 
     company 'Intetics' do
-      homepage 'http://intetics.com'
+      homepage 'https://intetics.com'
 
       project 'Resolver', start_date: 'January 2016', end_date: 'August 2019' do
         homepage 'https://resolver.co.uk'
@@ -95,7 +120,7 @@ FullTime.profile do
           • 'Introduced continuous delivery pipeline (GitHub, CircleCI, Capistrano, Slack)'
           • 'Setup backup model for MySQL to AWS S3 and Rackspace Cloud Files'
           • "Contributed filter parameters config fixes to 'rails' and 'dookeeper' gems in the sake of application"
-          • 'Setup and integrated web application with IBM Bluemix cognitive services AlchemyAPI, Watson and Tone Analyzer'
+          • 'Integrated web application with IBM Bluemix cognitive services AlchemyAPI, Watson and Tone Analyzer'
           • 'Developed and implemented HTML email sanitizers (loofah scrubbers)'
           • 'Consolidated MailChimp/Mandrill templates workflow, introduced dynamic content'
           • 'Setup CDN (AWS CloudFront distributions)'
@@ -122,7 +147,7 @@ FullTime.profile do
     end
 
     company 'GlobalLogic' do
-      homepage 'http://globallogic.com'
+      homepage 'https://globallogic.com'
 
       project 'ACP', start_date: 'November 2014', end_date: 'January 2016' do
         description 'Advanced creative platform for online advertising, which allows you to automate the processes related to creative services. It supports both platforms – desktop and mobile.'
@@ -139,7 +164,7 @@ FullTime.profile do
         end
 
         achievements do
-          • 'Setup test framework and covered with specs existing and new features'
+          • 'Set up test framework and covered with specs existing and new features'
           • 'Performed development operations – infrastructure setup, configuration and application deployment'
           • 'Developed bulk import/export of the records from/to excel spreadsheet'
           • 'Interviewed and mentored other developers'
@@ -158,7 +183,7 @@ FullTime.profile do
     end
 
     company 'DataArt' do
-      homepage 'http://dataart.com'
+      homepage 'https://dataart.com'
 
       project 'Online advertising aggregator', start_date: 'July 2014', end_date: 'November 2014' do
         description 'Online advertising aggregator from different services, particularly Google Adwords and Bing Ads, which provides data to the end user in the target scope. The application was divided into several parts: Rails application for the user management purposes, Ember application (frontend) for the users with dashboard/charts/statistics, Rails API application (backend) to support frontend, MapReduce cluster for the data import and analysis from advertising services.'
@@ -177,7 +202,7 @@ FullTime.profile do
         end
 
         achievements do
-          • 'Setup test framework and covered with specs existing and new features'
+          • 'Set up test framework and covered with specs existing and new features'
           • 'Figured out detailed requirements'
           • 'Developed Hadoop MapReduce streaming steps'
           • 'Enhanced API according to frequently changing business logic'
@@ -189,7 +214,7 @@ FullTime.profile do
     end
 
     company 'Anadea Inc' do
-      homepage 'http://anadea.info'
+      homepage 'https://anadea.info'
 
       project 'NowShop', start_date: 'October 2012', end_date: 'July 2014' do
         homepage 'http://nowshop.com'
